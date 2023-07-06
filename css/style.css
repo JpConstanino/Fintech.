@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-primeira: #F7F7F7;
+    --cor-secundaria: #0460D9;
+    --cor-tercearia: #616161;
+
+    --fonte-primaria: 'Roboto', sans-serif;
+
+    --sombra: 0rem 0.24rem 0.6rem rgba(0, 0, 0, 0.25);
+}
+
+/* PÁGINA DE LOGIN */
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primeira);
+}
+
+.headerIndex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.62rem 0 1.68rem;
+}
+
+.titulos {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-size: 2.88rem;
+    font-weight: 700;
+}
+
+.destaques {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.14rem;
+}
+
+input {
+    background-color: white;
+    font-family: var(--fonte-primaria);
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 0 0.48rem;
+    border-radius: 50px;
+    width: 15.9rem;
+    height: 2.4rem;
+    border: 0;
+    box-shadow: var(--sombra);
+}
+
+.inputs_CodContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1.14rem;
+}
+
+.input__Cod {
+    gap: 1.14rem;
+    background-color: white;
+    color: var(--cor-tercearia);
+    font-family: var(--fonte-primaria);
+    font-size: 1.8rem;
+    font-weight: 700;
+    border-radius: 20px;
+    width: 3rem;
+    height: 4.8rem;
+    border: 0;
+    box-shadow: var(--sombra);
+    text-align: center;
+    margin: 1.5rem 0 0 0;
+}
+
+.botoes__Index {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.14rem 0 0 0;
+    gap: 0.66rem;
+    font-family: var(--fonte-primaria);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.botoes__Cadastro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 0 0;
+    gap: 0.66rem;
+    font-family: var(--fonte-primaria);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.botoes__Opcao1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primeira);
+    border-radius: 50px;
+    width: 10.44rem;
+    padding: 0.66rem 0;
+    font-family: var(--fonte-primaria);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: var(--sombra);
+}
+
+.botoes__Opcao2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    color: var(--cor-secundaria);
+    border-radius: 50px;
+    width: 10.44rem;
+    padding: 0.66rem 0;
+    font-family: var(--fonte-primaria);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: var(--sombra);
+}
+
+.hover {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2.58rem 0 0 0;
+}
+
+.opcaoExtra {
+    color: var(--cor-tercearia);
+    font-family: var(--fonte-primaria);
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-decoration-line: underline;
+}
+
+.esqueciMinhaSenha {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-size: 1.0rem;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+/* PÁGINA DE CADASTRO */
+
+.headerCadastro {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding: 0.54rem 0.9rem 0.84rem;
+    font-family: var(--fonte-primaria);
+}
+
+.headerCadastro__Titulo {
+    color: var(--cor-secundaria);
+}
+
+.headerCadastro__Subtitulo {
+    color: black;
+    font-size: 0.78rem;
+}
+
+.contadorDeEtapas {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.62rem 0 0;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-weight: 700;
+}
+
+.informacoesDoUsuario {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-tercearia);
+    font-size: 0.9rem;
+}
+
+.links {
+    color: var(--cor-secundaria);
+}
+
+.avisos {
+    width: 11.16rem;
+    height: 3.18rem;
+    margin: 0 0 -0.5rem;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-tercearia);
+    font-weight: 400;
+    font-size: 0.72rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.titulo__Recuperacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1.44rem 0 1.98rem;
+}
